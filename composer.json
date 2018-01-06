@@ -20,5 +20,16 @@
             "Andskur\\CoinMc\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Andskur\\CoinMc\\CoinMcServiceProvider"
+            ],
+            "aliases": {
+                "CoinMc": "Andskur\\CoinMc\\CoinMcFacade"
+            }
+        }
+    }
 }
